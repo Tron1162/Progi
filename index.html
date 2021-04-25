@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Div">
+        <form action="">
+            <p>Input szöveg:</p>
+            <input type="text" value="" id="Text"> <br>
+            <button onlclick="myFunction()">Hozzáad</button>
+            <button onclick="deleteChild()">Töröl</button>
+    
+            <table>
+                <tr>
+                    <td>
+    
+                    </td>
+                    <td>
+    
+                    </td>
+                    <td>
+    
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    
+        <button class="gomb">Change Color</button>
+        <script>
+            var button = document.querySelector('.gomb');
+    
+            button.onclick = function(){
+                var red = Math.floor(Math.random() * 256);
+                var blue = Math.floor(Math.random() * 256);
+                var green = Math.floor(Math.random() * 256);
+    
+                this.style.backgroundColor = "rgb(" + red + "," + green + "," + blue + ")";
+            }
+        </script>
+</body>
+</html>
